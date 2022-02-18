@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Html CRUD com JavaScript</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Formulário CRUD</h1>
+    </div>
+    <table id="corpo">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome Completo*</label><label class="validation-error hide"
+                            id="fullNameValidationError">Este campo é obrigatório.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Matrícula empresarial</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Salário</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Cidade e Estado</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input id="enviar" type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td class="res">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nome Completo</th>
+                            <th>Matrícula empresarial</th>
+                            <th>Salário</th>
+                            <th>Cidade e Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="edit">
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

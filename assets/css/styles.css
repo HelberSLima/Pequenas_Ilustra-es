@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(122, 245, 169, 0.3);
+}
+
+body > table{
+    width: 80%;
+    margin: auto;
+}
+
+.title h1 {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+}
+
+#corpo {
+    background: rgba(48, 228, 252, 0.3);
+    margin: auto;
+    width: 990px;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #8d8d8d;
+    text-align: left;
+    padding: 4px;
+}
+
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input#enviar:hover {
+    background: rgba(48, 228, 252, 0.5);
+    transition: 0.2s;
+    width: 150px;
+    height: 48px;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+.edit tr td {
+    border: 1px solid lightslategray;
+    background: rgb(253, 244, 244);
+}
+
+tbody.edit td a {
+    font-size: 14px;
+    background: rgba(93, 146, 245, 0.5);
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    text-decoration: none;
+    font-weight: bold;
+}
